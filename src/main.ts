@@ -10,7 +10,7 @@ async function bootstrap() {
     credentials: true,
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS'
   })
-  await app.listen(process.env.PORT || 8000)
+  await app.listen(process.env.PORT || 8080)
 }
 
 bootstrap()
