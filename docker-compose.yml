@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  bifrost_backend:
+    container_name: bifrost_backend
+    image: codebox/nest-mongo:0.0.1
+    build:
+      context: .
+    ports:
+      - "8080:8000"
+    environment:
+      - EXTERNAL_PORT=8000
+      - DB_HOST=cluster0.rub2l.mongodb.net
+      - DB_USERNAME=bifrostAdmin
+      - DB_PASSWORD=7Ru_88x-rg8hs
+      - DB_DATABASE=bifrostdb
